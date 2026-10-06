@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Craft Burger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-text">Craft Burger House</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Sair</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">Sobre</a>
+                        <ul class="submenu">
+                            <li><a href="#">Empresa</a></li>
+                            <li><a href="#">Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">Contato</a>
+                        <ul class="submenu">
+                            <li><a href="#">Telefones</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cardápio de Hambúrgueres</h1>
+        <p>Escolha seus hambúrgueres preferidos e informe o endereço para entrega.</p>
+
+        <!-- Grade do Cardápio de Hamburgueria -->
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Classic Cheeseburger</h3>
+                <p>Pão brioche, burger 160g, queijo cheddar duplo e maionese da casa.</p>
+                <span>R$ 28,90</span>
+                <button class="btn-padrao btn-add" data-nome="Classic Cheeseburger" data-preco="28.90">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Bacon Monster</h3>
+                <p>Pão australiano, burger 180g, bacon crocante, cheddar e molho BBQ.</p>
+                <span>R$ 34,90</span>
+                <button class="btn-padrao btn-add" data-nome="Bacon Monster" data-preco="34.90">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Smash Duplo</h3>
+                <p>2x hambúrguer prensado de 90g, queijo prato, picles e molho especial.</p>
+                <span>R$ 31,50</span>
+                <button class="btn-padrao btn-add" data-nome="Smash Duplo" data-preco="31.50">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Batata Rústica</h3>
+                <p>Porção de batatas rústicas temperadas com alecrim e páprica.</p>
+                <span>R$ 16,00</span>
+                <button class="btn-padrao btn-add" data-nome="Batata Rústica" data-preco="16.00">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Área do Carrinho -->
+        <div class="cart-section">
+            <h2>Seu Carrinho</h2>
+            <ul id="cart-list"></ul>
+            <p style="font-size: 1.2rem; margin-top: 1rem;"><strong>Total: R$ <span id="cart-total">0,00</span></strong></p>
+
+            <form id="form-pedido" style="margin-top: 1.5rem;">
+                <div class="form-group">
+                    <label for="endereco-entrega">Endereço Completo para Entrega:</label>
+                    <input type="text" id="endereco-entrega" placeholder="Rua, número, complemento e bairro" required>
+                </div>
+                <button type="submit" class="btn-padrao">Finalizar Pedido</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Data de hoje: <span id="data-atual"></span></p>
+        <p>Todos os direitos reservados &copy;. Desenvolvido por: Nome Aluno 1 e Nome Aluno 2.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
